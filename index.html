@@ -90,21 +90,22 @@
             </nav>
 
             <!-- Action Buttons -->
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-2 sm:gap-3">
                 <a href="https://drive.google.com/file/d/15r-M480O8t7j1Tcv4Nj4yOCjDcGgY1-G/view?usp=drive_link"
                     target="_blank"
                     class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-mono font-bold rounded-xl group bg-gradient-to-br from-cyan-400 to-teal-500 group-hover:from-cyan-400 group-hover:to-teal-400 hover:text-white text-slate-950 shadow-[0_0_20px_rgba(56,189,248,0.25)] hover:shadow-[0_0_25px_rgba(56,189,248,0.5)] transition-all">
                     <span
-                        class="relative px-4 py-2 transition-all ease-in duration-75 bg-cyan-400 rounded-[10px] group-hover:bg-opacity-0 text-slate-950 group-hover:text-white flex items-center gap-2">
-                        <i data-lucide="file-down" size="15"></i>
-                        <span>CV / RESUME</span>
+                        class="relative px-2.5 sm:px-4 py-1.5 sm:py-2 transition-all ease-in duration-75 bg-cyan-400 rounded-[10px] group-hover:bg-opacity-0 text-slate-950 group-hover:text-white flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs">
+                        <i data-lucide="file-down" size="14"></i>
+                        <span class="hidden sm:inline">CV / RESUME</span>
+                        <span class="sm:hidden">CV</span>
                     </span>
                 </a>
 
                 <!-- Mobile Menu Button -->
                 <button id="mobileMenuBtn" aria-label="Open Navigation Menu"
                     class="lg:hidden p-2 rounded-xl bg-slate-900 border border-white/10 text-slate-300 hover:text-white focus:outline-none">
-                    <i data-lucide="menu" size="22"></i>
+                    <i data-lucide="menu" size="20"></i>
                 </button>
             </div>
         </div>
@@ -112,6 +113,13 @@
         <!-- Mobile Drawer Navigation -->
         <div id="mobileDrawer"
             class="hidden lg:hidden bg-[#0c101a]/95 backdrop-blur-2xl border-b border-white/10 px-6 py-6 transition-all animate-fade-in">
+            <!-- Full Width Mobile CV Download Button -->
+            <a href="https://drive.google.com/file/d/15r-M480O8t7j1Tcv4Nj4yOCjDcGgY1-G/view?usp=drive_link"
+                target="_blank"
+                class="w-full py-3 mb-4 rounded-xl bg-gradient-to-r from-cyan-400 to-teal-400 text-slate-950 font-mono font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(56,189,248,0.35)]">
+                <i data-lucide="file-down" size="16"></i>
+                <span>Download Full CV / Resume (PDF)</span>
+            </a>
             <div class="flex flex-col gap-4 font-mono text-sm tracking-wider uppercase">
                 <a href="#home"
                     class="mobile-nav-link text-slate-300 hover:text-cyan-400 py-2 border-b border-white/5 flex items-center justify-between">Home
@@ -138,30 +146,100 @@
                     class="mobile-nav-link text-slate-300 hover:text-cyan-400 py-2 flex items-center justify-between">Contact
                     Hub <i data-lucide="chevron-right" size="16"></i></a>
             </div>
+            <!-- Mobile Drawer Social Bar -->
+            <div class="pt-4 mt-2 border-t border-white/10 flex items-center justify-around">
+                <a href="https://www.linkedin.com/in/naveen-kumar-karri-/" target="_blank" rel="noopener noreferrer"
+                    title="LinkedIn Profile"
+                    class="p-2.5 rounded-xl bg-slate-900 border border-[#0A66C2]/30 text-[#0A66C2] hover:bg-[#0A66C2]/20 transition-all">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect width="4" height="12" x="2" y="9" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a href="mailto:karrinaveen.mme@gmail.com" title="Direct Email"
+                    class="p-2.5 rounded-xl bg-slate-900 border border-cyan-400/30 text-cyan-400 hover:bg-cyan-400/20 transition-all">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/naveen.karri_/" target="_blank" rel="noopener noreferrer"
+                    title="Instagram Profile"
+                    class="p-2.5 rounded-xl bg-slate-900 border border-pink-500/30 text-pink-500 hover:bg-pink-500/20 transition-all">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                </a>
+                <a href="https://github.com/naveenkarri383" target="_blank" rel="noopener noreferrer"
+                    title="GitHub Repositories"
+                    class="p-2.5 rounded-xl bg-slate-900 border border-white/20 text-slate-200 hover:bg-white/10 transition-all">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- Floating Social Dock -->
     <aside aria-label="Social Links"
-        class="fixed right-4 top-1/2 -translate-y-1/2 z-40 hidden md:flex flex-col items-center gap-4 bg-slate-900/80 backdrop-blur-xl border border-white/10 p-2.5 rounded-2xl shadow-2xl">
+        class="fixed right-4 top-1/2 -translate-y-1/2 z-40 hidden md:flex flex-col items-center gap-3.5 bg-[#0c101a]/95 backdrop-blur-xl border border-white/15 p-2 rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.6)]">
         <a href="https://www.linkedin.com/in/naveen-kumar-karri-/" target="_blank" rel="noopener noreferrer"
             title="LinkedIn Profile"
-            class="p-2.5 rounded-xl hover:bg-[#0A66C2]/20 text-slate-300 hover:text-[#0A66C2] transition-all hover:scale-110">
-            <i data-lucide="linkedin" size="18"></i>
+            class="p-2.5 rounded-xl bg-slate-900/80 border border-white/10 text-sky-400 hover:text-white hover:bg-[#0A66C2] hover:border-[#0A66C2] transition-all hover:scale-110 shadow-sm">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+            </svg>
+        </a>
+        <a href="mailto:karrinaveen.mme@gmail.com" title="Direct Email"
+            class="p-2.5 rounded-xl bg-slate-900/80 border border-white/10 text-cyan-400 hover:text-slate-950 hover:bg-cyan-400 hover:border-cyan-400 transition-all hover:scale-110 shadow-sm">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/naveen.karri_/" target="_blank" rel="noopener noreferrer"
+            title="Instagram Profile"
+            class="p-2.5 rounded-xl bg-slate-900/80 border border-white/10 text-pink-400 hover:text-white hover:bg-gradient-to-tr hover:from-amber-500 hover:via-pink-500 hover:to-purple-600 hover:border-pink-500 transition-all hover:scale-110 shadow-sm">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            </svg>
         </a>
         <a href="https://github.com/naveenkarri383" target="_blank" rel="noopener noreferrer"
             title="GitHub Repositories"
-            class="p-2.5 rounded-xl hover:bg-white/10 text-slate-300 hover:text-white transition-all hover:scale-110">
-            <i data-lucide="github" size="18"></i>
+            class="p-2.5 rounded-xl bg-slate-900/80 border border-white/10 text-slate-200 hover:text-slate-950 hover:bg-white hover:border-white transition-all hover:scale-110 shadow-sm">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg>
         </a>
         <a href="https://doi.org/10.1016/j.jalmes.2025.100200" target="_blank" rel="noopener noreferrer"
             title="Published Research Papers"
-            class="p-2.5 rounded-xl hover:bg-amber-400/20 text-slate-300 hover:text-amber-400 transition-all hover:scale-110">
-            <i data-lucide="book-open-check" size="18"></i>
-        </a>
-        <a href="mailto:karrinaveen.mme@gmail.com" title="Direct Email"
-            class="p-2.5 rounded-xl hover:bg-rose-500/20 text-slate-300 hover:text-rose-400 transition-all hover:scale-110">
-            <i data-lucide="mail" size="18"></i>
+            class="p-2.5 rounded-xl bg-slate-900/80 border border-white/10 text-amber-400 hover:text-slate-950 hover:bg-amber-400 hover:border-amber-400 transition-all hover:scale-110 shadow-sm">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                <path d="m9 9.5 2 2 4-4" />
+            </svg>
         </a>
         <div class="w-px h-8 bg-gradient-to-b from-cyan-400/60 to-transparent"></div>
     </aside>
@@ -188,85 +266,132 @@
 
                 <!-- Hero Title -->
                 <h1
-                    class="text-5xl sm:text-7xl lg:text-8xl font-extrabold font-sora tracking-tight leading-[1.05] mb-6">
+                    class="text-4xl sm:text-6xl lg:text-8xl font-extrabold font-sora tracking-tight leading-[1.08] mb-5 sm:mb-6">
                     NAVEEN <span class="gradient-heading">KUMAR</span>
                 </h1>
 
                 <!-- Subtitle with Dynamic Cycling Keyword -->
-                <div class="max-w-3xl mx-auto mb-8">
-                    <p class="text-lg sm:text-2xl text-slate-300 font-light leading-relaxed">
+                <div class="max-w-3xl mx-auto mb-6 sm:mb-8 px-2">
+                    <p class="text-base sm:text-xl lg:text-2xl text-slate-300 font-light leading-relaxed">
                         Pioneering <span class="text-white font-semibold">Metallurgy & Materials Science </span>
                         <span class="text-white font-semibold">Materials Informatics</span> to accelerate
                         next-generation alloy discovery.
                     </p>
                     <div
-                        class="mt-4 flex items-center justify-center gap-2 font-mono text-sm sm:text-base text-cyan-400">
+                        class="mt-3 sm:mt-4 flex items-center justify-center gap-2 font-mono text-xs sm:text-base text-cyan-400">
                         <span class="text-slate-500">&gt; Focus Area:</span>
                         <span id="heroKeyword"
-                            class="font-bold underline decoration-teal-400 decoration-2 underline-offset-4">Thermo-Calc
-                            & Alloy Design</span>
+                            class="font-bold underline decoration-teal-400 decoration-2 underline-offset-4">Material
+                            Science & Engineering</span>
                     </div>
                 </div>
 
                 <!-- Action CTAs -->
-                <div class="flex flex-wrap items-center justify-center gap-4 mb-16">
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 mb-6 max-w-sm sm:max-w-none mx-auto w-full px-2">
                     <a href="#projects"
-                        class="px-8 py-3.5 rounded-xl font-mono text-xs uppercase font-bold tracking-wider bg-cyan-400 hover:bg-cyan-300 text-slate-950 transition-all shadow-[0_0_25px_rgba(56,189,248,0.35)] hover:shadow-[0_0_35px_rgba(56,189,248,0.6)] flex items-center gap-2">
+                        class="w-full sm:w-auto px-6 sm:px-8 py-3.5 rounded-xl font-mono text-xs uppercase font-bold tracking-wider bg-cyan-400 hover:bg-cyan-300 text-slate-950 transition-all shadow-[0_0_25px_rgba(56,189,248,0.35)] hover:shadow-[0_0_35px_rgba(56,189,248,0.6)] flex items-center justify-center gap-2">
                         <i data-lucide="layers" size="16"></i>
                         <span>Explore Research</span>
                     </a>
                     <a href="#skills"
-                        class="px-8 py-3.5 rounded-xl font-mono text-xs uppercase font-bold tracking-wider bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-white/10 hover:border-cyan-400/50 transition-all flex items-center gap-2">
+                        class="w-full sm:w-auto px-6 sm:px-8 py-3.5 rounded-xl font-mono text-xs uppercase font-bold tracking-wider bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-white/10 hover:border-cyan-400/50 transition-all flex items-center justify-center gap-2">
                         <i data-lucide="cpu" size="16"></i>
                         <span>Technical Arsenal</span>
                     </a>
                     <a href="#contact"
-                        class="px-8 py-3.5 rounded-xl font-mono text-xs uppercase font-bold tracking-wider bg-transparent hover:bg-teal-500/10 text-teal-300 border border-teal-500/30 hover:border-teal-400 transition-all flex items-center gap-2">
+                        class="w-full sm:w-auto px-6 sm:px-8 py-3.5 rounded-xl font-mono text-xs uppercase font-bold tracking-wider bg-transparent hover:bg-teal-500/10 text-teal-300 border border-teal-500/30 hover:border-teal-400 transition-all flex items-center justify-center gap-2">
                         <i data-lucide="mail" size="16"></i>
                         <span>Get In Touch</span>
                     </a>
                 </div>
 
+                <!-- Quick Connect Social Media Bar (2x2 Grid on Mobile, Row on Desktop) -->
+                <div class="grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-sm sm:max-w-none mx-auto mb-12 sm:mb-16 px-2">
+                    <span class="text-xs font-mono text-slate-500 uppercase tracking-widest col-span-2 text-center sm:inline sm:mr-1 mb-1 sm:mb-0">Direct Links:</span>
+                    <a href="https://www.linkedin.com/in/naveen-kumar-karri-/" target="_blank" rel="noopener noreferrer"
+                        title="LinkedIn Profile"
+                        class="inline-flex items-center justify-center gap-2 px-3 sm:px-3.5 py-2 sm:py-1.5 rounded-full bg-slate-900/80 border border-[#0A66C2]/40 text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white text-xs font-mono transition-all hover:scale-105 shadow-sm">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect width="4" height="12" x="2" y="9" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:karrinaveen.mme@gmail.com" title="Email Address: karrinaveen.mme@gmail.com"
+                        class="inline-flex items-center justify-center gap-2 px-3 sm:px-3.5 py-2 sm:py-1.5 rounded-full bg-slate-900/80 border border-cyan-400/40 text-cyan-400 hover:bg-cyan-400 hover:text-slate-950 text-xs font-mono transition-all hover:scale-105 shadow-sm">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.instagram.com/naveen.karri_/" target="_blank" rel="noopener noreferrer"
+                        title="Instagram: @naveen.karri_"
+                        class="inline-flex items-center justify-center gap-2 px-3 sm:px-3.5 py-2 sm:py-1.5 rounded-full bg-slate-900/80 border border-pink-500/40 text-pink-400 hover:bg-gradient-to-r hover:from-amber-500 hover:via-pink-500 hover:to-purple-600 hover:text-white text-xs font-mono transition-all hover:scale-105 shadow-sm">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://github.com/naveenkarri383" target="_blank" rel="noopener noreferrer"
+                        title="GitHub Profile"
+                        class="inline-flex items-center justify-center gap-2 px-3 sm:px-3.5 py-2 sm:py-1.5 rounded-full bg-slate-900/80 border border-white/20 text-slate-200 hover:bg-white hover:text-slate-950 text-xs font-mono transition-all hover:scale-105 shadow-sm">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                            <path d="M9 18c-4.51 2-5-2-7-2" />
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+
                 <!-- 4 Impact Metric Counter Cards -->
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
-                    <div class="glass-card p-5 rounded-2xl border-l-4 border-l-cyan-400 text-left">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-3xl sm:text-4xl font-extrabold font-sora text-white">4+</span>
-                            <i data-lucide="building-2" class="text-cyan-400" size="24"></i>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 max-w-5xl mx-auto px-1 sm:px-0">
+                    <div class="glass-card p-3.5 sm:p-5 rounded-xl sm:rounded-2xl border-l-4 border-l-cyan-400 text-left">
+                        <div class="flex items-center justify-between mb-1.5 sm:mb-2">
+                            <span class="text-2xl sm:text-4xl font-extrabold font-sora text-white">4+</span>
+                            <i data-lucide="building-2" class="text-cyan-400" size="20"></i>
                         </div>
-                        <p class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">Institutions
+                        <p class="text-[10px] sm:text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">Institutions
                         </p>
-                        <p class="text-[11px] text-slate-500 mt-1">Freiburg, IIT Madras, TU Darmstadt, RGUKT</p>
+                        <p class="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 sm:mt-1 leading-tight sm:leading-normal">Freiburg, IIT Madras, TU Darmstadt, RGUKT</p>
                     </div>
 
-                    <div class="glass-card p-5 rounded-2xl border-l-4 border-l-teal-400 text-left">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-3xl sm:text-4xl font-extrabold font-sora text-white">2+</span>
-                            <i data-lucide="newspaper" class="text-teal-400" size="24"></i>
+                    <div class="glass-card p-3.5 sm:p-5 rounded-xl sm:rounded-2xl border-l-4 border-l-teal-400 text-left">
+                        <div class="flex items-center justify-between mb-1.5 sm:mb-2">
+                            <span class="text-2xl sm:text-4xl font-extrabold font-sora text-white">2+</span>
+                            <i data-lucide="newspaper" class="text-teal-400" size="20"></i>
                         </div>
-                        <p class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">Publications
+                        <p class="text-[10px] sm:text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">Publications
                         </p>
-                        <p class="text-[11px] text-slate-500 mt-1">Elsevier Journal & Springer Book Chapter</p>
+                        <p class="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 sm:mt-1 leading-tight sm:leading-normal">Elsevier Journal & Springer Book Chapter</p>
                     </div>
 
-                    <div class="glass-card p-5 rounded-2xl border-l-4 border-l-amber-400 text-left">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-3xl sm:text-4xl font-extrabold font-sora text-white">24+</span>
-                            <i data-lucide="award" class="text-amber-400" size="24"></i>
+                    <div class="glass-card p-3.5 sm:p-5 rounded-xl sm:rounded-2xl border-l-4 border-l-amber-400 text-left">
+                        <div class="flex items-center justify-between mb-1.5 sm:mb-2">
+                            <span class="text-2xl sm:text-4xl font-extrabold font-sora text-white">24+</span>
+                            <i data-lucide="award" class="text-amber-400" size="20"></i>
                         </div>
-                        <p class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">
+                        <p class="text-[10px] sm:text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">
                             Certifications</p>
-                        <p class="text-[11px] text-slate-500 mt-1">NDE Level II, GIAN, Workshops & Honors</p>
+                        <p class="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 sm:mt-1 leading-tight sm:leading-normal">NDE Level II, GIAN, Workshops & Honors</p>
                     </div>
 
-                    <div class="glass-card p-5 rounded-2xl border-l-4 border-l-indigo-400 text-left">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-3xl sm:text-4xl font-extrabold font-sora text-white">10+</span>
-                            <i data-lucide="microscope" class="text-indigo-400" size="24"></i>
+                    <div class="glass-card p-3.5 sm:p-5 rounded-xl sm:rounded-2xl border-l-4 border-l-indigo-400 text-left">
+                        <div class="flex items-center justify-between mb-1.5 sm:mb-2">
+                            <span class="text-2xl sm:text-4xl font-extrabold font-sora text-white">10+</span>
+                            <i data-lucide="microscope" class="text-indigo-400" size="20"></i>
                         </div>
-                        <p class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">Tools &
+                        <p class="text-[10px] sm:text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold">Tools &
                             Techniques</p>
-                        <p class="text-[11px] text-slate-500 mt-1">SEM, TEM, EBSD, APT, Thermo-Calc, Python</p>
+                        <p class="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 sm:mt-1 leading-tight sm:leading-normal">SEM, TEM, EBSD, APT, Thermo-Calc, Python</p>
                     </div>
                 </div>
 
@@ -447,9 +572,9 @@
                         <i data-lucide="cpu" size="30"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white font-sora mb-3 group-hover:text-teal-400 transition-colors">
-                        Thermo-Calc & Alloy Design</h3>
+                        Alloy Design</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                        Thermodynamic and kinetic modeling using Thermo-Calc and Pandat for high-throughput phase
+                        Thermodynamic and kinetic modeling using Thermo-Calc for high-throughput phase
                         equilibria, TRIP High-Entropy Alloys, and high-temperature intermetallics.
                     </p>
                     <div class="flex flex-wrap gap-1.5">
@@ -721,16 +846,14 @@
                                     Omniparse: Scientific Data Parsing Tool
                                 </h3>
                                 <p class="text-xs text-slate-400 leading-relaxed mb-4">
-                                    High-throughput scientific data extraction and structured parsing engine designed
-                                    for materials research. Automatically processes raw spectroscopic data, XRD
-                                    profiles, and characterization instrument outputs into machine-learning-ready
-                                    datasets.
+                                    Scientific data parsing tool designed to extract metadata and measurement values from diverse instrument file formats (.txt, .csv, .dat). Features interactive plotting, multi-curve comparison, session saving for future analysis, and instant bulk downloads.
                                 </p>
                                 <div class="flex flex-wrap gap-1.5 mb-4">
-                                    <span class="skill-badge text-[9px]">Spectra Parsing</span>
-                                    <span class="skill-badge text-[9px]">XRD / Raman</span>
-                                    <span class="skill-badge text-[9px]">Automated Data Extraction</span>
-                                    <span class="skill-badge text-[9px]">Materials Informatics</span>
+                                    <span class="skill-badge text-[9px]">Metadata & Measurements</span>
+                                    <span class="skill-badge text-[9px]">Multi-Format (.txt, .csv, .dat)</span>
+                                    <span class="skill-badge text-[9px]">Plotting & Comparison</span>
+                                    <span class="skill-badge text-[9px]">Save for Future Analysis</span>
+                                    <span class="skill-badge text-[9px]">Instant Bulk Download</span>
                                 </div>
                             </div>
                         </div>
@@ -771,19 +894,17 @@
                             </div>
                             <div class="p-6">
                                 <h3
-                                    class="text-xl font-bold text-white font-sora mb-2 group-hover:text-teal-400 transition-colors">
-                                    Metavirta: Materials Science Platform
+                                    class="text-xl font-bold text-white font-sora mb-2 group-hover:text-teal-300 transition-colors">
+                                    Metavirta: Materials Science & Metallurgy Platform
                                 </h3>
                                 <p class="text-xs text-slate-400 leading-relaxed mb-4">
-                                    Unified cloud-based platform for computational materials scientists. Integrates 3D
-                                    interactive crystal lattice exploration, multicomponent CALPHAD phase diagram
-                                    controls, and materials genome repositories into an interactive environment.
+                                    Unified digital platform for materials science and metallurgical engineers. Provides comprehensive resources including interactive quizzes, curated study materials, Agricola AI, doubt solving forums, metallurgy job postings, and technical events.
                                 </p>
                                 <div class="flex flex-wrap gap-1.5 mb-4">
-                                    <span class="skill-badge text-[9px]">Cloud Platform</span>
-                                    <span class="skill-badge text-[9px]">3D Lattice Visualization</span>
-                                    <span class="skill-badge text-[9px]">CALPHAD Simulation</span>
-                                    <span class="skill-badge text-[9px]">Materials Genome</span>
+                                    <span class="skill-badge text-[9px]">Agricola AI</span>
+                                    <span class="skill-badge text-[9px]">Quizzes & Study Materials</span>
+                                    <span class="skill-badge text-[9px]">Doubt Solving</span>
+                                    <span class="skill-badge text-[9px]">Job Postings & Events</span>
                                 </div>
                             </div>
                         </div>
@@ -1805,27 +1926,68 @@
                     <div>
                         <p class="text-xs font-mono text-slate-500 uppercase tracking-wider mb-3">Academic &
                             Professional Networks</p>
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-3 flex-wrap">
                             <a href="https://www.linkedin.com/in/naveen-kumar-karri-/" target="_blank"
-                                rel="noopener noreferrer"
-                                class="p-3 rounded-xl bg-slate-900 border border-white/10 text-slate-300 hover:text-[#0A66C2] hover:border-[#0A66C2]/40 transition-all">
-                                <i data-lucide="linkedin" size="20"></i>
+                                rel="noopener noreferrer" title="LinkedIn Profile"
+                                class="p-3 rounded-xl bg-slate-900 border border-[#0A66C2]/40 text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition-all hover:scale-105 shadow-md">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect width="4" height="12" x="2" y="9" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                            </a>
+                            <a href="mailto:karrinaveen.mme@gmail.com" title="Direct Email: karrinaveen.mme@gmail.com"
+                                class="p-3 rounded-xl bg-slate-900 border border-cyan-400/40 text-cyan-400 hover:bg-cyan-400 hover:text-slate-950 transition-all hover:scale-105 shadow-md">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/naveen.karri_/" target="_blank" rel="noopener noreferrer"
+                                title="Instagram: @naveen.karri_"
+                                class="p-3 rounded-xl bg-slate-900 border border-pink-500/40 text-pink-400 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-pink-500 hover:to-purple-600 hover:text-white transition-all hover:scale-105 shadow-md">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                                </svg>
                             </a>
                             <a href="https://github.com/naveenkarri383" target="_blank" rel="noopener noreferrer"
-                                class="p-3 rounded-xl bg-slate-900 border border-white/10 text-slate-300 hover:text-white hover:border-white/30 transition-all">
-                                <i data-lucide="github" size="20"></i>
+                                title="GitHub Repositories"
+                                class="p-3 rounded-xl bg-slate-900 border border-white/20 text-slate-200 hover:bg-white hover:text-slate-950 transition-all hover:scale-105 shadow-md">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
                             </a>
                             <a href="https://doi.org/10.1016/j.jalmes.2025.100200" target="_blank"
                                 rel="noopener noreferrer"
-                                class="p-3 rounded-xl bg-slate-900 border border-white/10 text-slate-300 hover:text-cyan-400 hover:border-cyan-400/40 transition-all"
-                                title="Journal Publication">
-                                <i data-lucide="book-open" size="20"></i>
+                                class="p-3 rounded-xl bg-slate-900 border border-amber-400/40 text-amber-400 hover:bg-amber-400 hover:text-slate-950 transition-all hover:scale-105 shadow-md"
+                                title="Journal Publication (Elsevier)">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                                </svg>
                             </a>
                             <a href="https://drive.google.com/file/d/15r-M480O8t7j1Tcv4Nj4yOCjDcGgY1-G/view?usp=drive_link"
                                 target="_blank" rel="noopener noreferrer"
-                                class="p-3 rounded-xl bg-slate-900 border border-white/10 text-slate-300 hover:text-teal-400 hover:border-teal-400/40 transition-all"
-                                title="View CV">
-                                <i data-lucide="file-text" size="20"></i>
+                                class="p-3 rounded-xl bg-slate-900 border border-teal-400/40 text-teal-400 hover:bg-teal-400 hover:text-slate-950 transition-all hover:scale-105 shadow-md"
+                                title="Curriculum Vitae (PDF)">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                    <polyline points="10 9 9 9 8 9" />
+                                </svg>
                             </a>
                         </div>
                     </div>
@@ -1917,6 +2079,48 @@
                 <span class="font-bold text-sm tracking-tight text-white font-sora">
                     NAVEEN KUMAR KARRI
                 </span>
+            </div>
+
+            <!-- Footer Social Media Links -->
+            <div class="flex items-center gap-3">
+                <a href="https://www.linkedin.com/in/naveen-kumar-karri-/" target="_blank" rel="noopener noreferrer"
+                    title="LinkedIn Profile"
+                    class="w-10 h-10 rounded-xl bg-slate-900/80 border border-[#0A66C2]/40 text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white flex items-center justify-center transition-all hover:scale-110 shadow-sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect width="4" height="12" x="2" y="9" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a href="mailto:karrinaveen.mme@gmail.com" title="Direct Email"
+                    class="w-10 h-10 rounded-xl bg-slate-900/80 border border-cyan-400/40 text-cyan-400 hover:bg-cyan-400 hover:text-slate-950 flex items-center justify-center transition-all hover:scale-110 shadow-sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/naveen.karri_/" target="_blank" rel="noopener noreferrer"
+                    title="Instagram Profile"
+                    class="w-10 h-10 rounded-xl bg-slate-900/80 border border-pink-500/40 text-pink-400 hover:bg-gradient-to-tr hover:from-amber-500 hover:via-pink-500 hover:to-purple-600 hover:text-white flex items-center justify-center transition-all hover:scale-110 shadow-sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                </a>
+                <a href="https://github.com/naveenkarri383" target="_blank" rel="noopener noreferrer"
+                    title="GitHub Repositories"
+                    class="w-10 h-10 rounded-xl bg-slate-900/80 border border-white/20 text-slate-200 hover:bg-white hover:text-slate-950 flex items-center justify-center transition-all hover:scale-110 shadow-sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                    </svg>
+                </a>
             </div>
 
             <p class="text-xs font-mono text-slate-500 uppercase tracking-[0.3em] text-center">
@@ -2065,7 +2269,7 @@
 
         // --- 2. Dynamic Rotating Hero Keyword ---
         const heroKeywords = [
-            "Thermo-Calc & Alloy Design",
+            "Material Selection",
             "Multi-Scale Electron Microscopy & EBSD",
             "Atom Probe Tomography (3D APT)",
             "Physics-Informed Materials Informatics",
@@ -2711,46 +2915,55 @@
             },
             4: {
                 title: "Omniparse: Scientific Data Parsing & Extraction Tool",
-                badge: "Scientific Web Tool • Materials Informatics",
+                badge: "Scientific Web Tool • omniparse.metavirta.com",
                 description: `
                     <div class="space-y-4">
                         <p class="text-sm text-slate-300 leading-relaxed">
-                            Omniparse is an automated scientific data extraction and structured parsing engine designed to streamline experimental and computational workflows in materials science. It ingests complex spectroscopic data, XRD patterns, diffraction profiles, and multi-instrument characterization outputs, transforming raw messy experimental files into structured tabular datasets ready for high-throughput machine learning.
+                            Omniparse is an automated scientific data parsing and analytics engine designed to extract critical metadata and precise measurement series from raw data files generated across various laboratory characterization instruments. It converts unstructured instrument outputs into clean, unified datasets with interactive visualization, comparative curve analysis, session saving, and instant multi-format data export.
                         </p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 py-2">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 py-1">
                             <div class="glass-card p-4 rounded-xl border border-cyan-400/20">
-                                <span class="text-[10px] font-mono text-cyan-400 uppercase">Core Capabilities</span>
-                                <p class="text-xs text-white mt-1">Multi-format parsing (XRD, Raman, TGA, CSV/TXT) • Automated peak detection • Background noise subtraction • Batch metadata pipeline</p>
+                                <span class="text-[10px] font-mono text-cyan-400 uppercase tracking-wider font-semibold">Metadata & Measurement Extraction</span>
+                                <p class="text-xs text-white mt-1.5 leading-relaxed">Extracts instrument headers, scan parameters, and raw measurement points from diverse formats (<span class="text-cyan-300 font-mono">.txt, .csv, .dat, .tsv</span>) generated by XRD, Raman, FTIR, UV-Vis, TGA, and mechanical testers.</p>
                             </div>
                             <div class="glass-card p-4 rounded-xl border border-teal-400/20">
-                                <span class="text-[10px] font-mono text-teal-400 uppercase">Materials Science Impact</span>
-                                <p class="text-xs text-white mt-1">Accelerates characterization analysis cycles by converting unstructured laboratory instrument exports directly into clean ML features.</p>
+                                <span class="text-[10px] font-mono text-teal-400 uppercase tracking-wider font-semibold">Plotting & Comparative Curve Analysis</span>
+                                <p class="text-xs text-white mt-1.5 leading-relaxed">Interactive scientific plotting with multi-curve overlays. Easily compare various plots side-by-side or stacked, evaluate peak positions, and perform baseline corrections in real time.</p>
+                            </div>
+                            <div class="glass-card p-4 rounded-xl border border-blue-400/20">
+                                <span class="text-[10px] font-mono text-blue-400 uppercase tracking-wider font-semibold">Save Data for Future Analysis</span>
+                                <p class="text-xs text-white mt-1.5 leading-relaxed">Store processed experimental sessions and curated datasets safely to revisit, compare, or continue in-depth materials research at any time without reprocessing raw files.</p>
+                            </div>
+                            <div class="glass-card p-4 rounded-xl border border-emerald-400/20">
+                                <span class="text-[10px] font-mono text-emerald-400 uppercase tracking-wider font-semibold">Instant Bulk Download & ML Export</span>
+                                <p class="text-xs text-white mt-1.5 leading-relaxed">Instantly download all extracted measurements, structured CSV/JSON tables, and publication-ready vector plots in a single click, ready for materials informatics workflows.</p>
                             </div>
                         </div>
-                        <div class="flex items-center gap-3 pt-2">
-                            <a href="https://omniparse.metavirta.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-cyan-400 text-slate-950 font-mono text-xs font-bold uppercase hover:bg-cyan-300 shadow-md">
+                        <div class="flex flex-wrap items-center gap-3 pt-2">
+                            <a href="https://omniparse.metavirta.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-cyan-400 text-slate-950 font-mono text-xs font-bold uppercase hover:bg-cyan-300 shadow-md transition-all">
                                 Launch Omniparse Tool <i data-lucide="external-link" size="14"></i>
                             </a>
+                            <span class="text-[11px] text-slate-400 font-mono">Free & Web-Based • No Setup Required</span>
                         </div>
                     </div>
                 `
             },
             5: {
-                title: "Metavirta: Next-Gen Materials Informatics & Simulation Platform",
-                badge: "Cloud Materials Science Ecosystem",
+                title: "Metavirta: Unified Digital Platform for Materials Science & Metallurgy",
+                badge: "Unified Digital Platform • metavirta.com",
                 description: `
                     <div class="space-y-4">
                         <p class="text-sm text-slate-300 leading-relaxed">
-                            Metavirta is a unified platform developed for materials scientists, computational metallurgists, and researchers. It bridges atomistic simulations (DFT/MD), CALPHAD thermodynamic equilibria, 3D interactive crystal lattice visualization, and materials genome repositories into a collaborative cloud environment.
+                            Metavirta is a unified digital platform built specifically for materials science and metallurgical engineers. It provides a comprehensive ecosystem of academic, research, and career resources designed to empower students, scholars, and industry professionals worldwide.
                         </p>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 py-2">
                             <div class="glass-card p-4 rounded-xl border border-teal-400/20">
-                                <span class="text-[10px] font-mono text-teal-400 uppercase">Architecture & Modules</span>
-                                <p class="text-xs text-white mt-1">Interactive 3D crystal lattice viewer • Multicomponent phase diagram calculators • Simulation pipeline orchestration • Materials property databases</p>
+                                <span class="text-[10px] font-mono text-teal-400 uppercase">Academic & Learning Hub</span>
+                                <p class="text-xs text-white mt-1">Curated study materials • Interactive metallurgical quizzes • Active doubt solving platform • Foundational physical metallurgy theory</p>
                             </div>
                             <div class="glass-card p-4 rounded-xl border border-cyan-400/20">
-                                <span class="text-[10px] font-mono text-cyan-400 uppercase">Research Vision</span>
-                                <p class="text-xs text-white mt-1">Unifies physical metallurgy theory with modern cloud computational workflows to expedite novel alloy design and discovery.</p>
+                                <span class="text-[10px] font-mono text-cyan-400 uppercase">AI & Career Ecosystem</span>
+                                <p class="text-xs text-white mt-1">Agricola AI assistant for intelligent technical queries • Verified materials & metallurgy job postings • Global conferences, webinars, and technical events</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-3 pt-2">
@@ -3017,6 +3230,28 @@
             const prevBtn = document.getElementById('prevBtn');
             if (nextBtn) nextBtn.onclick = () => updateCoverflow(currentCoverflowIdx + 1);
             if (prevBtn) prevBtn.onclick = () => updateCoverflow(currentCoverflowIdx - 1);
+
+            // Touch Swipe Support for 3D Coverflow on Mobile
+            const coverTrack = document.getElementById('coverflowTrack');
+            if (coverTrack) {
+                let touchStartX = 0;
+                let touchStartY = 0;
+                coverTrack.addEventListener('touchstart', e => {
+                    touchStartX = e.changedTouches[0].clientX;
+                    touchStartY = e.changedTouches[0].clientY;
+                }, { passive: true });
+                coverTrack.addEventListener('touchend', e => {
+                    const diffX = e.changedTouches[0].clientX - touchStartX;
+                    const diffY = e.changedTouches[0].clientY - touchStartY;
+                    if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY)) {
+                        if (diffX < 0) {
+                            updateCoverflow(currentCoverflowIdx + 1);
+                        } else {
+                            updateCoverflow(currentCoverflowIdx - 1);
+                        }
+                    }
+                }, { passive: true });
+            }
 
             // Toggle Archive Button
             const toggleArchive = document.getElementById('toggleArchive');
